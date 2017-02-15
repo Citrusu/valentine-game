@@ -1,0 +1,201 @@
+@import url('http://at.alicdn.com/t/font_21njkc1x5vhx5hfr.css');
+/*BGM开关开始*/
+.my-bgm{
+    display: none;
+}
+.music-switch{
+    position: absolute;
+    z-index: 9999;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+    top: 12%;
+    left: 4%;
+    color: #fff;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 50%;
+}
+.music-switch:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    display: block;
+}
+.music-switch.play{
+    -webkit-animation: bgmplay 2s linear infinite;
+    -moz-animation: bgmplay 2s linear infinite;
+    -o-animation: bgmplay 2s linear infinite;
+    animation: bgmplay 2s linear infinite;
+}
+@keyframes bgmplay {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes bgmplay {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes bgmplay {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes bgmplay {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/*BGM开关结束*/
+/*活动规则弹窗开始*/
+.rule-pop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2009;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.rule-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+.rule-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+}
+.rule-board{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 85%;
+}
+.rule-close{
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    width: 12%;
+    z-index: 1;
+}
+.rule-close img{
+    display: block;
+    width: 100%;
+}
+.rule-title{
+    width: 100%;
+}
+.rule-title img{
+    display: block;
+    width: 100%;
+}
+.rule-content{
+    width: 100%;
+    padding: 5% 20%;
+    box-sizing: border-box;
+    text-align: justify;
+    font-size: .75rem;
+    color: #5d172c;
+    height: 50%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    line-height: 1rem;
+}
+.rule-content div{
+    margin-bottom: .75rem;
+    display: flex;
+    display: -webkit-flex;
+}
+.rule-content div span img{
+    display: block;
+    width: .3rem;
+    height: .6rem;
+    margin: .2rem .4rem 0 0;
+}
+.rule-num{
+    display: flex;
+    display: -webkit-flex;
+    /*align-items: center;*/
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+}
+.rule-bottom{
+    width: 100%;
+}
+.rule-bottom img{
+    display: block;
+    width: 100%;
+}
+.rule-table{
+    width: 100%;
+    text-align: center;
+    margin: -.75rem 0 .75rem 0;
+    font-size: .7rem;
+}
+.rule-table td{
+    border: .05rem solid #5d172c;
+}
+/*活动规则弹窗结束*/

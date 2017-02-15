@@ -1,0 +1,193 @@
+.ui-content{
+    background-color: #FF9FBA;
+}
+.ui-cell{
+    padding: 0;
+}
+.ui-cell:before{
+    border: none;
+}
+
+/*头部开始*/
+.top{
+    width: 95%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3%;
+}
+.top > div{
+    flex: 1;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+}
+.top-right{
+    justify-content: flex-end;
+}
+.time-img{
+    width: 20%;
+    margin-left: 5%;
+}
+.time-img img{
+    display: block;
+    width: 100%;
+}
+.couple-img{
+    width: 40%;
+}
+.couple-img img{
+    display: block;
+    width: 100%;
+}
+.time-word, .couple-word{
+    color: #fff;
+    margin-left: 7%;
+}
+/*头部结束*/
+
+/*步骤开始*/
+.game-step{
+    position: absolute;
+    top: 10%;
+    height: 90%;
+    z-index: 1;
+}
+.step{
+    width: 100%;
+    margin-top: 9%;
+}
+.step img{
+    display: block;
+    width: 100%;
+}
+.btn-box{
+    width: 65%;
+    margin: 5% auto;
+}
+.start-btn, .rank-btn{
+    display: block;
+    width: 100%;
+}
+.start-btn img, .rank-btn img{
+    display: block;
+    width: 100%;
+}
+.rank-btn{
+    margin-top: 10%;
+}
+.step-rule-btn{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    line-height: 1.5rem;
+}
+/*步骤结束*/
+
+/*游戏开始*/
+.game-play{
+    opacity: 0;
+}
+.game-box{
+    position: absolute;
+    top:10%;
+    left: 0;
+    height: 90%;
+    width: 100%;
+}
+.cat{
+    background-size: 100% 100%;
+    background-position: center center;
+}
+canvas{
+    position: absolute;
+}
+/*游戏结束*/
+
+/*得分开始*/
+.game-score{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    /*top: 0;*/
+    position: fixed;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.fraction-title{
+    width: 87%;
+    margin: 3% auto 0 auto;
+}
+.fraction-title img{
+    display: block;
+    width: 100%;
+}
+.fraction-board{
+    width: 100%;
+}
+.fraction-board > div{
+    width: 100%;
+}
+.fraction-board > div img{
+    display: block;
+    width: 100%;
+}
+.board-middle{
+    color: #ff6d96;
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    padding-top: 5%;
+}
+.score-btn-box{
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    margin-top: 15%;
+}
+.score-btn-box > a{
+    display: block;
+    width: 22%;
+}
+.score-btn-box > a img{
+    display: block;
+    width: 100%;
+}
+.score-rank-btn{
+    display: block;
+    width: 65%;
+    margin: 10% auto;
+}
+.score-rank-btn img{
+    display: block;
+    width: 100%;
+}
+/*得分结束*/
+
+/*分享弹窗开始*/
+.share-pop{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    z-index: 2009;
+    background-color: rgba(0,0,0,.8);
+}
+.share-img{
+    width: 100%;
+}
+.share-img img{
+    display: block;
+    width: 100%;
+}
+/*分享弹窗结束*/
