@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>单身汪大战情侣喵</title>
+    <meta id="wxKeywords" name="Keywords" content="<keywords />">
+    <meta id="wxDescription" name="Description" content="<description />" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="pragram" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--ETUI CSS 开始-->
+    <link rel="stylesheet" href="assets/css/etui.css">
+    <!--ETUI CSS 结束-->
+    <!--通用CSS样式 开始-->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <!--通用CSS样式 结束-->
+    <!--本页CSS样式开始-->
+    <link rel="stylesheet" href="assets/css/dog.css">
+    <!--本页CSS样式结束-->
+</head>
+<body>
+<div class="ui-page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div class="ui-page ui-page-current">
+        <!-- 页面内容区 开始-->
+        <div class="ui-content">
+
+            <!--顶部-->
+            <div class="top">
+                <div class="top-left">
+                    <div class="time-img">
+                        <img src="assets/img/time_dog.jpg">
+                    </div>
+                    <div class="time-word">
+                        <div>倒计时</div>
+                        <div><span id="timeSecond">10</span>.<span id="time">000</span>秒</div>
+                    </div>
+                </div>
+                <div class="top-right">
+                    <div class="couple-img">
+                        <img src="assets/img/couple_dog.jpg">
+                    </div>
+                    <div class="couple-word">
+                        <div>拆散</div>
+                        <!--<div><span id="num"><notem pty name="user.fraction">{$user.fraction}<e lse/>0</notem pty></span>对</div>-->
+                        <div><span id="num">0</span>对</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--步骤-->
+            <div class="game-step">
+                <div class="step">
+                    <img src="assets/img/step_dog.jpg">
+                </div>
+                <div class="btn-box">
+                    <a class="start-btn">
+                        <img src="assets/img/start_btn_dog.png">
+                    </a>
+                    <a href="__URL__/lists" class="rank-btn">
+                        <img src="assets/img/rank_btn_dog.png">
+                    </a>
+                </div>
+                <div class="step-rule-btn">活动规则</div>
+            </div>
+
+            <!--游戏-->
+            <div class="game-play">
+                <div class="game-box">
+                </div>
+                <div class="hide-box" style="display: none">
+                    <img id="catImg" src="assets/img/dog.png" >
+                    <img id="catTapImg" src="assets/img/dog1.png" alt="">
+                </div>
+            </div>
+
+            <!--得分-->
+            <div class="game-score" style="background: url('assets/img/fraction_bg_dog.jpg') no-repeat; background-size: 100% 100%; display: none;">
+                <div class="fraction-title">
+                    <img src="assets/img/fraction_title_dog.png">
+                </div>
+                <div class="fraction-board">
+                    <div class="board-top">
+                        <img src="assets/img/fraction_boardtop_dog.png">
+                    </div>
+                    <div class="board-middle" style="background: url('assets/img/fraction_boardbg_dog.png') repeat-y; background-size: 100% 1px;"></div>
+                    <div class="board-bottom">
+                        <img src="assets/img/fraction_boardbottom_dog.png">
+                    </div>
+                </div>
+                <div class="score-btn-box">
+                    <a class="help-btn">
+                        <img src="assets/img/share_btn.png">
+                    </a>
+                    <a class="again-btn">
+                        <img src="assets/img/again_btn.png">
+                    </a>
+                </div>
+                <a href="javascript:;" class="score-rank-btn">
+                    <img src="assets/img/rank_btn_dog.png">
+                </a>
+            </div>
+
+        </div>
+        <!-- 页面内容区 结束-->
+    </div>
+    <!-- 单个page ,第一个.page默认被展示-->
+
+</div>
+
+<!-- popup, panel 等放在这里 -->
+<div class="panel-overlay">
+
+    <!--分享弹窗-->
+    <div class="share-pop">
+        <div class="share-img">
+            <img src="assets/img/share_pop.png">
+        </div>
+    </div>
+
+</div>
+
+<script src="assets/js/jquery-3.1.1.min.js"></script>
+<script src="assets/js/dog.js"></script>
+
+</body>
+</html>
