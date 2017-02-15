@@ -13,17 +13,16 @@
     <meta http-equiv="pragram" content="no-cache" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <!--ETUI CSS 开始-->
-    <link rel="stylesheet" href="{$NOW_THEME_URL}Assets/etui/css/etui.css">
+    <link rel="stylesheet" href="assets/css/etui.css">
     <!--ETUI CSS 结束-->
     <!--通用CSS样式 开始-->
-    <link rel="stylesheet" href="{$NOW_THEME_URL}Assets/Css/Lover/common.css">
+    <link rel="stylesheet" href="assets/css/common.css">
     <!--通用CSS样式 结束-->
     <!--本页CSS样式开始-->
-    <link rel="stylesheet" href="{$NOW_THEME_URL}Assets/Css/Lover/cat.css">
+    <link rel="stylesheet" href="assets/css/cat.css">
     <!--本页CSS样式结束-->
 </head>
 <body>
-<input type="hidden" id="fraction" value="{$user.fraction}"/>
 <div class="ui-page-group">
     <!-- 单个page ,第一个.page默认被展示-->
     <div class="ui-page ui-page-current">
@@ -34,7 +33,7 @@
             <div class="top">
                 <div class="top-left">
                     <div class="time-img">
-                        <img src="{$NOW_THEME_URL}Assets/Images/Lover/time_cat.jpg">
+                        <img src="assets/img/time_cat.jpg">
                     </div>
                     <div class="time-word">
                         <div>倒计时</div>
@@ -43,7 +42,7 @@
                 </div>
                 <div class="top-right">
                     <div class="couple-img">
-                        <img src="{$NOW_THEME_URL}Assets/Images/Lover/couple_cat.jpg">
+                        <img src="assets/img/couple_cat.jpg">
                     </div>
                     <div class="couple-word">
                         <div>牵手</div>
@@ -56,14 +55,14 @@
             <!--步骤-->
             <div class="game-step">
                 <div class="step">
-                    <img src="{$NOW_THEME_URL}Assets/Images/Lover/step_cat.jpg">
+                    <img src="assets/img/step_cat.jpg">
                 </div>
                 <div class="btn-box">
                     <a class="start-btn">
-                        <img src="{$NOW_THEME_URL}Assets/Images/Lover/start_btn_cat.png">
+                        <img src="assets/img/start_btn_cat.png">
                     </a>
                     <a href="__URL__/lists" class="rank-btn">
-                        <img src="{$NOW_THEME_URL}Assets/Images/Lover/rank_btn_cat.png">
+                        <img src="assets/img/rank_btn_cat.png">
                     </a>
                 </div>
                 <div class="step-rule-btn">活动规则</div>
@@ -75,35 +74,35 @@
                     <canvas id="cvs"></canvas>
                 </div>
                 <div class="hide-box" style="display: none;">
-                    <img id="catImg" src="{$NOW_THEME_URL}Assets/Images/Lover/cat.png" alt="">
-                    <img id="catTapImg" src="{$NOW_THEME_URL}Assets/Images/Lover/cat1.png" alt="">
+                    <img id="catImg" src="assets/img/cat.png" alt="">
+                    <img id="catTapImg" src="assets/img/cat1.png" alt="">
                 </div>
             </div>
 
             <!--得分-->
-            <div class="game-score" style="background: url('{$NOW_THEME_URL}Assets/Images/Lover/fraction_bg_cat.jpg') no-repeat; background-size: 100% 100%; display: none;">
+            <div class="game-score" style="background: url('assets/img/fraction_bg_cat.jpg') no-repeat; background-size: 100% 100%; display: none;">
                 <div class="fraction-title">
-                    <img src="{$NOW_THEME_URL}Assets/Images/Lover/fraction_title_cat.png">
+                    <img src="assets/img/fraction_title_cat.png">
                 </div>
                 <div class="fraction-board">
                     <div class="board-top">
-                        <img src="{$NOW_THEME_URL}Assets/Images/Lover/fraction_boardtop_cat.png">
+                        <img src="assets/img/fraction_boardtop_cat.png">
                     </div>
-                    <div class="board-middle" style="background: url('{$NOW_THEME_URL}Assets/Images/Lover/fraction_boardbg_cat.png') repeat-y; background-size: 100% 1px;"></div>
+                    <div class="board-middle" style="background: url('assets/img/fraction_boardbg_cat.png') repeat-y; background-size: 100% 1px;"></div>
                     <div class="board-bottom">
-                        <img src="{$NOW_THEME_URL}Assets/Images/Lover/fraction_boardbottom_cat.png">
+                        <img src="assets/img/fraction_boardbottom_cat.png">
                     </div>
                 </div>
                 <div class="score-btn-box">
                     <a class="help-btn">
-                        <img src="{$NOW_THEME_URL}Assets/Images/Lover/share_btn.png">
+                        <img src="assets/img/share_btn.png">
                     </a>
                     <a class="again-btn">
-                        <img src="{$NOW_THEME_URL}Assets/Images/Lover/again_btn.png">
+                        <img src="assets/img/again_btn.png">
                     </a>
                 </div>
-                <a href="__URL__/lists" class="score-rank-btn">
-                    <img src="{$NOW_THEME_URL}Assets/Images/Lover/rank_btn_cat.png">
+                <a href="javascript:;" class="score-rank-btn">
+                    <img src="assets/img/rank_btn_cat.png">
                 </a>
             </div>
 
@@ -117,32 +116,15 @@
 <!-- popup, panel 等放在这里 -->
 <div class="panel-overlay">
 
-    <!--活动规则-->
-    <include file="Lover/rule" />
-
     <!--分享弹窗-->
     <div class="share-pop">
         <div class="share-img">
-            <img src="{$NOW_THEME_URL}Assets/Images/Lover/share_pop.png">
+            <img src="assets/img/share_pop.png">
         </div>
     </div>
 
-    <!--BGM-->
-    <include file="Lover/bgm" />
-
 </div>
-
-<div style="display: none;"><script src="http://s4.cnzz.com/z_stat.php?id=1261248321&web_id=1261248321" language="JavaScript"></script></div>
-<script src="{$NOW_THEME_URL}Assets/seajs/sea.js"></script>
-<include file="Public/config" />
-<include file="Lover/share" />
-<script>
-    seajs.use('init',function(init){
-        init();
-        seajs.use('Js/Lover/cat.js');
-        seajs.use('Js/Lover/common.js');
-    });
-</script>
-
+<script src="assets/js/jquery-3.1.1.min.js"></script>
+<script src="assets/js/cat.js"></script>
 </body>
 </html>
